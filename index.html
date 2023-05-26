@@ -11,30 +11,43 @@
 </head>
 
 <body>
-    <div>
+    <header>
         <div>
+            <div><a href=""><img src="img/logo.png" alt=""></a></div>
             <div>
-                <h2>Data de nascimento</h2>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">PSG</a></li>
+                    <li><a href="">Cursos</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="psg-card">
+            <h2>Cálculo de PSG</h2>
+            <div class="input">
+                <h3>Data de nascimento</h3>
                 <input type="date" name="" id="nasc">
             </div>
-            <div>
-                <h2>Renda total</h2>
+            <div class="input">
+                <h3>Renda total</h3>
                 <input type="number" name="" id="renda">
             </div>
-            <div>
-                <h2>Pessoas</h2>
+            <div class="input">
+                <h3>Quantas pessoas?</h3>
                 <input type="number" name="" id="npessoas">
             </div>
             <div>
-                <button onclick="calcularIdade()">Gerar</button>
+                <button onclick="calcular()">Gerar</button>
             </div>
-            <div>
-                <p id="resp">0</p>
+            <div id="aviso">
+                <p id="avisoc"></p>
+                <p id="aviso1"></p>
+                <p id="aviso2"></p>
             </div>
-
-
         </div>
-    </div>
+    </main>
 
 </body>
 
