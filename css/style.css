@@ -32,15 +32,22 @@ li {
     margin: 10px;
     padding: 10px 20px;
     list-style: none;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 
-a {
+.aheader {
     text-decoration: none;
     color: gray;
     transition: 0.5;
 }
+
+.aheader:hover {
+    text-decoration: none;
+    transition: 0.5;
+    color: orange;
+}
+
 
 a:hover {
     color: orange;
@@ -55,7 +62,7 @@ main {
     justify-content: center;
 }
 
-h2 {
+.h2psg {
     text-align: center;
     color: white;
     font-size: 80px;
@@ -146,3 +153,123 @@ button:hover {
     padding: 10px 20px;
     border-radius: 50px;
 }
+
+#psgdirect {
+    flex-direction: column;
+    background-color: darkblue;
+    width: 1400px;
+    color: white;
+    align-items: center;
+}
+
+#psgdirect>h2>a {
+    color: white;
+    text-decoration: none;
+}
+
+#psgdirect>h2>a:hover {
+    text-decoration: underline;
+
+}
+
+
+h2 {
+    font-size: 120px;
+    margin: 0;
+}
+#divhomepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divhomepage>div {
+    display: flex;
+    padding: 100px;
+}
+
+#quemsomos  {
+      width: 1400px;
+      
+
+}
+
+#quemsomos>div>img {
+    width: 400px;
+    margin: 50px;
+}
+
+#cursos {
+    flex-direction: column;
+    background-color: orange;
+    width: 100vw;
+    color: white;
+    align-items: center;
+
+}
+
+#cursos>div {
+    width: 1400px;
+    display: flex;
+ flex-direction: column;
+  align-items: end;
+
+}
+
+#cursos>div>div {
+    display: flex;
+ flex-direction: column;
+ align-items: end;
+
+ 
+
+}
+
+#local {
+    flex-direction: column;
+
+}
+
+#local>div {
+    width: 1400px;
+    display: flex;
+ flex-direction: column;
+}
+
+#local>div>div {
+    margin-top: 40px;
+}
+
+#contatos {
+    flex-direction: column;
+    background-color: orange;
+    width: 100vw;
+    color: white;
+    align-items: center;
+}
+#contatos>div {
+    width: 1400px;
+    display: flex;
+ flex-direction: column;
+  align-items: end;
+
+}
+
+#contatos>div>div {
+    display: flex;
+ flex-direction: column;
+ align-items: end;
+
+ 
+
+}
+
+h3 {
+    font-size: 30px;
+}
+
+
+
+p {
+font-size: 24px;}

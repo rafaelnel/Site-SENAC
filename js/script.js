@@ -14,18 +14,22 @@ function calcular() {
     let rendapcap = renda / npessoas;
 
     document.getElementById("avisoc").innerHTML = null;
-    document.getElementById("aviso1").innerHTML = null; document.getElementById("aviso2").innerHTML = null;
+    document.getElementById("aviso1").innerHTML = null;
+     document.getElementById("aviso2").innerHTML = null;
     document.getElementById("aviso1").classList.remove("avisocor2");
     document.getElementById("aviso2").classList.remove("avisocor2");
     document.getElementById("avisoc").classList.remove("avisocor1");
+    document.getElementById("avisoc").classList.remove("avisocor2");
 
 
     if (rendapcap <= 1980 && anosCompletos >= 16) {
-        document.getElementById("avisoc").innerHTML = "Sua inscrição pode ser feita.";
+        document.getElementById("avisoc").innerHTML = "Sua inscrição pode ser realizada. Entre em contato pelo número. (99) 99999-9999";
         document.getElementById("avisoc").classList.add("avisocor1");
 
 
     } else {
+        document.getElementById("avisoc").innerHTML = "Sua inscrição não pode ser realizada.";
+        document.getElementById("avisoc").classList.add("avisocor2");
         if (rendapcap > 1980) {
             document.getElementById("aviso1").innerHTML = "Sua renda é muito alta para o benefício.";
             document.getElementById("aviso1").classList.add("avisocor2");
@@ -40,4 +44,12 @@ function calcular() {
     document.getElementById("renda").value = null; document.getElementById("npessoas").value = null;
 
 
+}
+
+
+function media(){
+let n1 = document.getElementById('nota1').value;
+let n2 = document.getElementById('nota2').value;
+let n3 = document.getElementById('nota3').value;
+let media = (n1 + n2 + n3)/3;
 }
