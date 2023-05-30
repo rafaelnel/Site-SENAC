@@ -1,19 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: 'Golos Text', sans-serif;
     color: orange;
+    overflow-x: hidden;
+    margin: 0;
 }
 
 header {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 100px;
     border-bottom: 1px solid orange;
     margin-bottom: 100px;
     box-shadow: rgba(227, 227, 230, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     margin-bottom: 100px;
+    padding: 10px;
 }
 
 
@@ -30,7 +43,7 @@ ul {
 
 li {
     margin: 10px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     list-style: none;
     font-size: 24px;
 }
@@ -53,11 +66,14 @@ a:hover {
     color: orange;
 }
 
+
 img {
-    width: 150px;
+    width: 100px;
+    padding: 20px 0;
 }
 
 main {
+    margin-top: 150px;
     display: flex;
     justify-content: center;
 }
@@ -65,24 +81,23 @@ main {
 .h2psg {
     text-align: center;
     color: white;
-    font-size: 80px;
+    font-size: 60px;
     background-color: orange;
     padding: 50px 0;
-    margin: 0 0 60px 0;
-    width: 1600px;
+    margin: 0 0 40px 0;
+    width: 1400px;
     border: 2px solid orange;
 
 }
 
-#psg-card {
+.psg-card {
     border-bottom: 20px solid orange;
-    width: 1600px;
+    width: 1400px;
     font-weight: 300;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 50px;
     font-size: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     margin-bottom: 100px;
@@ -97,10 +112,10 @@ main {
 }
 
 input {
-    width: 500px;
-    height: 40px;
+    width: 400px;
+    height: 30px;
     border: 3px solid lightgray;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     padding: 10px;
     border-radius: 5px;
@@ -141,15 +156,15 @@ button:hover {
 }
 
 .avisocor1 {
-    border: 3px solid green;
-    color: green;
+    border: 3px solid rgb(0, 176, 0);
+    color: rgb(0, 176, 0);
     padding: 10px 20px;
     border-radius: 50px;
 }
 
 .avisocor2 {
-    border: 3px solid red;
-    color: red;
+    border: 3px solid rgb(255, 45, 45);
+    color: rgb(255, 45, 45);
     padding: 10px 20px;
     border-radius: 50px;
 }
@@ -157,7 +172,7 @@ button:hover {
 #psgdirect {
     flex-direction: column;
     background-color: darkblue;
-    width: 1400px;
+    width: 1000px;
     color: white;
     align-items: center;
 }
@@ -174,9 +189,11 @@ button:hover {
 
 
 h2 {
-    font-size: 120px;
+    font-size: 80px;
     margin: 0;
+    padding-bottom: 20px;
 }
+
 #divhomepage {
     display: flex;
     flex-direction: column;
@@ -185,14 +202,13 @@ h2 {
 }
 
 #divhomepage>div {
+    margin-top: 100px;
     display: flex;
     padding: 100px;
 }
 
-#quemsomos  {
-      width: 1400px;
-      
-
+#quemsomos {
+    width: 1000px;
 }
 
 #quemsomos>div>img {
@@ -210,19 +226,19 @@ h2 {
 }
 
 #cursos>div {
-    width: 1400px;
+    width: 1000px;
     display: flex;
- flex-direction: column;
-  align-items: end;
+    flex-direction: column;
+    align-items: end;
 
 }
 
 #cursos>div>div {
     display: flex;
- flex-direction: column;
- align-items: end;
+    flex-direction: column;
+    align-items: end;
 
- 
+
 
 }
 
@@ -232,9 +248,9 @@ h2 {
 }
 
 #local>div {
-    width: 1400px;
+    width: 1000px;
     display: flex;
- flex-direction: column;
+    flex-direction: column;
 }
 
 #local>div>div {
@@ -248,28 +264,113 @@ h2 {
     color: white;
     align-items: center;
 }
+
 #contatos>div {
-    width: 1400px;
+    width: 1000px;
     display: flex;
- flex-direction: column;
-  align-items: end;
+    flex-direction: column;
+    align-items: end;
 
 }
 
 #contatos>div>div {
     display: flex;
- flex-direction: column;
- align-items: end;
+    flex-direction: column;
+    align-items: end;
 
- 
+
 
 }
 
+
 h3 {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
 
 p {
-font-size: 24px;}
+    font-size: 24px;
+}
+
+#notas {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 40px 0;
+
+}
+
+#notas>div {
+    display: flex;
+    font-size: 30px;
+    margin: 40px 0;
+    font-weight: 600;
+}
+
+#notas input {
+    width: 80px;
+    height: 40px;
+    margin: 0px 20px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+#presenca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#presenca input {
+    width: 80px;
+}
+
+#presenca form {
+    margin-top: 40px;
+    width: 1400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#presenca label {
+    font-size: 24px;
+}
+
+#presenca form>div {
+    display: flex;
+    align-items: center;
+    margin: 0 80px;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    height: 200px;
+    margin-bottom: 0;
+}
+
+.aprov {
+    color: rgb(0, 176, 0);
+    font-weight: 700;
+    width: 1400px;
+}
+
+.reprov {
+    color: rgb(255, 45, 45);
+    font-weight: 700;
+    width: 1400px;
+}
