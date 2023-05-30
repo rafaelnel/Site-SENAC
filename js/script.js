@@ -80,6 +80,9 @@ function frequencia() {
 function VerificaAprovacao() {
     let m = media();
     let f = frequencia();
+    document.getElementById("result").classList.remove("reprov");
+    document.getElementById("result").classList.remove("aprov");
+
 
     if (m >= 6 && f >= 0.75) {
         document.getElementById("result").innerHTML = "Aprovado";
