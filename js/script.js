@@ -124,7 +124,7 @@ function Voltarnav(){
     }
 }
 
-function navmobile() {
+function Navmobile() {
     let x = document.getElementById("topnav");
     let header = document.getElementById("header");
     if (x.style.display === "block") {
@@ -144,7 +144,7 @@ function navmobile() {
 
 }
 
-function reduzirmenu() {
+function Reduzirmenu() {
     let a = document.querySelectorAll("a.aheader");
     let icon = document.getElementById("hamb");
     let display = window.getComputedStyle(icon).display;
