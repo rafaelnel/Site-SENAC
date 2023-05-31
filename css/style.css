@@ -88,7 +88,7 @@ header a:hover {
     border-bottom: 4px solid white;
 }
 
-.imglogo{
+.imglogo, #imglogohome{
     width: 100px;
     padding: 20px 0;
     transition: 1s;
