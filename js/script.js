@@ -94,3 +94,30 @@ function VerificaAprovacao() {
     }
 }
 
+function Mudarnav(){
+    let a = document.querySelectorAll("a.aheader");
+    a.forEach(el => el.classList.add("mudaa") );
+    let img = document.querySelectorAll("img.imglogo");
+    img.forEach(el => el.src="../img/logo-senac-negative.png");
+   
+
+}
+
+function Voltarnav(){
+    let a = document.querySelectorAll("a.aheader");
+    a.forEach(el => el.classList.remove("mudaa") );
+    let img = document.querySelectorAll("img.imglogo");
+    img.forEach(el => el.src="../img/logo.png");
+   
+}
+
+function navmobile() {
+    var x = document.getElementById("mobile_icon");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+
