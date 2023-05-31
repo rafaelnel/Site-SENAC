@@ -145,7 +145,6 @@ function Navmobile() {
 }
 
 function Reduzirmenu() {
-    let a = document.querySelectorAll("a.aheader");
     let icon = document.getElementById("hamb");
     let display = window.getComputedStyle(icon).display;
 
