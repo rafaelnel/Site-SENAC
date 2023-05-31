@@ -32,7 +32,6 @@ header {
 }
 
 header:hover {
-    background-color: #F29100;
     transform: scale(1.02);
     transform-origin:top;
 }
@@ -97,6 +96,10 @@ header a:hover {
 ul {
     width: 900px;
 }
+
+.icon {
+    display: none;
+  }
 
 main {
     margin-top: 160px;
@@ -199,17 +202,19 @@ button:hover {
     flex-direction: column;
     background-color: #004587;
     width: 1000px;
+    height: 100px;
     color: white;
     align-items: center;
+    padding: 100px;
 }
 
-#psgdirect>h2>a {
+#psgdirect>a {
     color: white;
     text-decoration: none;
     transition: 1s;
 }
 
-#psgdirect>h2>a:hover {
+#psgdirect>a:hover {
     text-decoration: underline;
 
 }
@@ -231,11 +236,11 @@ h2 {
 #divhomepage>div {
     margin-top: 50px;
     display: flex;
-    padding: 100px;
 }
 
 #quemsomos {
     width: 1000px;
+    padding: 200px 100px 100px 100px;
 }
 
 #quemsomos>div>img {
@@ -249,6 +254,7 @@ h2 {
     width: 100vw;
     color: white;
     align-items: center;
+    padding: 200px 100px 100px 100px;
 
 }
 
@@ -269,8 +275,13 @@ h2 {
 
 }
 
+#cursos h3 {
+    text-align: end;
+    }
+
 #local {
     flex-direction: column;
+    padding: 200px 100px 100px 100px;
 
 }
 
@@ -298,6 +309,7 @@ h2 {
     width: 100vw;
     color: white;
     align-items: center;
+    padding: 200px 100px 100px 100px;
 }
 
 #contatos>div {

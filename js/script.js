@@ -1,4 +1,3 @@
-
 function calcular() {
     const hoje = new Date()
     const nasc = new Date(document.getElementById("nasc").value)
@@ -94,30 +93,69 @@ function VerificaAprovacao() {
     }
 }
 
+
 function Mudarnav(){
     let a = document.querySelectorAll("a.aheader");
-    a.forEach(el => el.classList.add("mudaa") );
-    let img = document.querySelectorAll("img.imglogo");
-    img.forEach(el => el.src="../img/logo-senac-negative.png");
-    document.getElementById("imglogohome").src="img/logo-senac-negative.png";
+    let icon = document.getElementById("hamb");
+    let display = window.getComputedStyle(icon).display;
+
+    if (display == "none"){
+        a.forEach(el => el.classList.add("mudaa") );
+        let img = document.querySelectorAll("img.imglogo");
+        img.forEach(el => el.src="../img/logo-senac-negative.png");
+        document.getElementById("imglogohome").src="img/logo-senac-negative.png";
+        document.getElementById("header").style.backgroundColor = "#F29100";
+    }
 
 }
+
 
 function Voltarnav(){
     let a = document.querySelectorAll("a.aheader");
-    a.forEach(el => el.classList.remove("mudaa") );
-    let img = document.querySelectorAll("img.imglogo");
-    img.forEach(el => el.src="../img/logo.png");
-    document.getElementById("imglogohome").src="img/logo.png";
+    let icon = document.getElementById("hamb");
+    let display = window.getComputedStyle(icon).display;
+
+    if (display == "none"){
+        a.forEach(el => el.classList.remove("mudaa") );
+        let img = document.querySelectorAll("img.imglogo");
+        img.forEach(el => el.src="../img/logo.png");
+        document.getElementById("imglogohome").src="img/logo.png";
+        document.getElementById("header").style.backgroundColor = "white";
+    }
 }
 
-// function navmobile() {
-//     var x = document.getElementById("mobile_icon");
-//     if (x.style.display === "block") {
-//       x.style.display = "none";
-//     } else {
-//       x.style.display = "block";
-//     }
-//   }
+function navmobile() {
+    let x = document.getElementById("topnav");
+    let header = document.getElementById("header");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      header.style.height = "100px";
+      document.getElementById("imgmenu").src="img/menu.png";
+      document.getElementById("imglogohome").src="img/logo.png";
+      document.getElementById("header").style.backgroundColor = "white";
+      
+    } else {
+      x.style.display = "block";
+      header.style.height = "600px";
+      document.getElementById("imgmenu").src="img/sair.png";
+      document.getElementById("imglogohome").src="img/logo-senac-negative.png";
+      document.getElementById("header").style.backgroundColor = "#F29100";
+  }
 
+}
 
+function reduzirmenu() {
+    let a = document.querySelectorAll("a.aheader");
+    let icon = document.getElementById("hamb");
+    let display = window.getComputedStyle(icon).display;
+
+    if (display == "block"){
+        let x = document.getElementById("topnav");
+        let header = document.getElementById("header");
+        x.style.display = "none";
+        header.style.height = "100px";
+        document.getElementById("imgmenu").src="img/menu.png";
+        document.getElementById("imglogohome").src="img/logo.png";
+        document.getElementById("header").style.backgroundColor = "white";
+}
+}

@@ -6,37 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <script src="js/script.js"></script>
     <title>SENAC Cora Coralina</title>
 </head>
 
 <body>
-    <header  onmouseover="Mudarnav()" onmouseout="Voltarnav()"> 
+    <header id="header"  onmouseover="Mudarnav()" onmouseout="Voltarnav()"> 
         <div>
-            <div id="logo
-            "><a href="index.html"><img src="img/logo.png" id="imglogohome" alt=""></a>
+            <div id="logo">
+                <div ><a href="index.html"><img src="img/logo.png" id="imglogohome" alt=""></a></div>
+                <div>
+                <a class="icon" id="hamb" onclick="navmobile()">
+                    <img src="img/menu.png" id="imgmenu" alt="">
+                </a>
+                </div>
             </div>
-            <div>
+            <div id="topnav">
                 <ul>
-                    <li><a class="aheader" href="#quemsomos"> Quem somos</a></li>
-                    <li><a class="aheader" href="#cursos">Cursos</a></li>
-                    <li><a class="aheader" href="#local">Localização</a></li>
-                    <li><a class="aheader" href="#contatos">Contatos</a></li>
+                    <li><a class="aheader" onclick="reduzirmenu()" href="#quemsomos"> Quem somos</a></li>
+                    <li><a class="aheader" onclick="reduzirmenu()" href="#cursos">Cursos</a></li>
+                    <li><a class="aheader" onclick="reduzirmenu()" href="#local">Localização</a></li>
+                    <li><a class="aheader" onclick="reduzirmenu()" href="#contatos">Contatos</a></li>
                     <li><a href="pages/pagina2.html" class="aheader">Cálculo aluno</a></li>
                 </ul>
             </div>
-            <!-- <a href="javascript:void(0);" class="icon" onclick="navmobile()">
-                <i class="fa fa-bars"></i>
-              </a> -->
         </div>
     </header>
     <main>
         <div id="divhomepage">
             <div id="psgdirect">
-                <h2>
-                    <a href="pages/pagina1.html" class="">Inscrições PSG</a>
-                </h2>
+                
+                    <a href="pages/pagina1.html" class=""><h2>Inscrições PSG</h2></a>
+                
             </div>
 
             <div id="quemsomos">
@@ -72,8 +75,8 @@
                         <h3>Operador de Computador</h3>
                         <h3>Administrador de Banco de Dados</h3>
                         <h3>Programador de Sistemas</h3>
-                        <h3>Instalador de Sistemas
-                            Eletroeletrônicos e CFTV</h3>
+                        <h3>Instalador de Sistemas</h3>
+                        <h3>Eletroeletrônicos e CFTV</h3>
                         <h3>Técnico em Administração</h3>
                         <h3>Técnico em Informática</h3>
                     </div>
