@@ -88,11 +88,11 @@ function VerificaAprovacao() {
         document.getElementById("result").innerHTML = "Aprovado";
         document.getElementById("result").classList.add("aprov");
 
-    } else if  (m < 5 || f < 0.75)  {
+    } else if (m < 5 || f < 0.75) {
         document.getElementById("result").innerHTML = "Reprovado";
         document.getElementById("result").classList.add("reprov");
 
-    }else{
+    } else {
         document.getElementById("result").innerHTML = "Recuperação";
         document.getElementById("result").classList.add("recup");
 
@@ -101,32 +101,32 @@ function VerificaAprovacao() {
 }
 
 
-function Mudarnav(){
+function Mudarnav() {
     let a = document.querySelectorAll("a.aheader");
     let icon = document.getElementById("hamb");
     let display = window.getComputedStyle(icon).display;
 
-    if (display == "none"){
-        a.forEach(el => el.classList.add("mudaa") );
+    if (display == "none") {
+        a.forEach(el => el.classList.add("mudaa"));
         let img = document.querySelectorAll("img.imglogo");
-        img.forEach(el => el.src="../img/logo-senac-negative.png");
-        document.getElementById("imglogohome").src="img/logo-senac-negative.png";
+        img.forEach(el => el.src = "../img/logo-senac-negative.png");
+        document.getElementById("imglogohome").src = "img/logo-senac-negative.png";
         document.getElementById("header").style.backgroundColor = "#F29100";
     }
 
 }
 
 
-function Voltarnav(){
+function Voltarnav() {
     let a = document.querySelectorAll("a.aheader");
     let icon = document.getElementById("hamb");
     let display = window.getComputedStyle(icon).display;
 
-    if (display == "none"){
-        a.forEach(el => el.classList.remove("mudaa") );
+    if (display == "none") {
+        a.forEach(el => el.classList.remove("mudaa"));
         let img = document.querySelectorAll("img.imglogo");
-        img.forEach(el => el.src="../img/logo.png");
-        document.getElementById("imglogohome").src="img/logo.png";
+        img.forEach(el => el.src = "../img/logo.png");
+        document.getElementById("imglogohome").src = "img/logo.png";
         document.getElementById("header").style.backgroundColor = "white";
     }
 }
@@ -135,19 +135,19 @@ function Navmobile() {
     let x = document.getElementById("topnav");
     let header = document.getElementById("header");
     if (x.style.display === "block") {
-      x.style.display = "none";
-      header.style.height = "100px";
-      document.getElementById("imgmenu").src="img/menu.png";
-      document.getElementById("imglogohome").src="img/logo.png";
-      document.getElementById("header").style.backgroundColor = "white";
-      
+        x.style.display = "none";
+        header.style.height = "100px";
+        document.getElementById("imgmenu").src = "img/menu.png";
+        document.getElementById("imglogohome").src = "img/logo.png";
+        document.getElementById("header").style.backgroundColor = "white";
+
     } else {
-      x.style.display = "block";
-      header.style.height = "600px";
-      document.getElementById("imgmenu").src="img/sair.png";
-      document.getElementById("imglogohome").src="img/logo-senac-negative.png";
-      document.getElementById("header").style.backgroundColor = "#F29100";
-  }
+        x.style.display = "block";
+        header.style.height = "600px";
+        document.getElementById("imgmenu").src = "img/sair.png";
+        document.getElementById("imglogohome").src = "img/logo-senac-negative.png";
+        document.getElementById("header").style.backgroundColor = "#F29100";
+    }
 
 }
 
@@ -155,13 +155,13 @@ function Reduzirmenu() {
     let icon = document.getElementById("hamb");
     let display = window.getComputedStyle(icon).display;
 
-    if (display == "block"){
+    if (display == "block") {
         let x = document.getElementById("topnav");
         let header = document.getElementById("header");
         x.style.display = "none";
         header.style.height = "100px";
-        document.getElementById("imgmenu").src="img/menu.png";
-        document.getElementById("imglogohome").src="img/logo.png";
+        document.getElementById("imgmenu").src = "img/menu.png";
+        document.getElementById("imglogohome").src = "img/logo.png";
         document.getElementById("header").style.backgroundColor = "white";
-}
+    }
 }
