@@ -428,6 +428,7 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
     flex-wrap: wrap;
     height: 1600px;
+    margin-bottom: 100px;
 }
 
 #presenca label {
@@ -441,13 +442,29 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+#resultadoaluno {
+    border-top:4px solid #F29100;
+    background-color: white;
+    height: 200px;
+    width: 100vw;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resultadoaluno button, #resultadoaluno p {
+    margin-top: 20px;
+}
+
 #result {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    height: 200px;
-    margin-bottom: 0;
+    height: 50px;
+
 }
 
 .aprov {
@@ -458,6 +475,11 @@ input::-webkit-inner-spin-button {
 
 .reprov {
     color: rgb(255, 45, 45);
+    font-weight: 700;
+    width: 300px;
+}
+.recup {    
+    color: rgb(252, 185, 0);
     font-weight: 700;
     width: 300px;
 }
