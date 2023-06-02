@@ -115,14 +115,14 @@ main {
     background-color: #F29100;
     padding: 50px 0;
     margin: 0 0 40px 0;
-    width: 1400px;
+    width: 1000px;
     border: 2px solid #F29100;
 
 }
 
 .psg-card {
     border-bottom: 20px solid #F29100;
-    width: 1400px;
+    width: 1000px;
     font-weight: 300;
     display: flex;
     justify-content: center;
@@ -381,12 +381,13 @@ input::-webkit-inner-spin-button {
 
 
 #presenca input {
-    width: 80px;
+    margin-left: 15px;
+    width: 20px;
 }
 
 #presenca form {
     margin-top: 40px;
-    width: 1400px;
+    width: 900px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -395,13 +396,22 @@ input::-webkit-inner-spin-button {
 }
 
 #presenca label {
+    margin-left: 5px;
     font-size: 24px;
 }
 
 #presenca form>div {
     display: flex;
     align-items: center;
-    margin: 0 80px;
+    justify-content: start;
+    margin: 0 20px;
+}
+
+#resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
 
 #result {
@@ -409,14 +419,19 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    margin-bottom: 0;
+    margin: 25px 0 ;
 }
 
 #resultadoaluno {
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#case1, #case2 {
+    margin: 5px 0;
+    
 }
 
 .aprov {

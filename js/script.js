@@ -80,26 +80,33 @@ function VerificaAprovacao() {
     let m = media();
     let f = frequencia();
 
-    document.getElementById("result").classList.remove("aprov");
-    document.getElementById("result").classList.remove("reprov");
-    document.getElementById("result").classList.remove("recup");
+    document.getElementById("resultado").classList.remove("aprov");
+    document.getElementById("resultado").classList.remove("reprov");
+    document.getElementById("resultado").classList.remove("recup");
+    document.getElementById("case1").innerHTML = null;
+    document.getElementById("case2").innerHTML = null;
 
     if (m >= 6 && f >= 0.75) {
         document.getElementById("result").innerHTML = "Aprovado";
-        document.getElementById("result").classList.add("aprov");
+        document.getElementById("resultado").classList.add("aprov");
 
     } else if (m < 5 || f < 0.75) {
         document.getElementById("result").innerHTML = "Reprovado";
-        document.getElementById("result").classList.add("reprov");
-
+        document.getElementById("resultado").classList.add("reprov");
+        if(m < 5){
+            document.getElementById("case1").innerHTML = "Média de notas abaixo de 5";
+        }
+        if(f < 0.75){
+            document.getElementById("case2").innerHTML = "Frequência abaixo de 75%";
+        }
     } else {
         document.getElementById("result").innerHTML = "Recuperação";
-        document.getElementById("result").classList.add("recup");
+        document.getElementById("resultado").classList.add("recup");
 
 
     }
 }
-
+   
 
 function Mudarnav() {
     let a = document.querySelectorAll("a.aheader");

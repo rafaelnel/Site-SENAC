@@ -430,24 +430,27 @@
         flex-direction: column;
         flex-wrap: wrap;
         height: 1600px;
-        margin-bottom: 100px;
+        margin-bottom: 200px;
     }
 
     #presenca label {
-        font-size: 24px;
+        font-size: 16px;
+        font-weight: 700;
     }
 
     #presenca form>div {
-        width: 360px;
+        width: 320px;
         display: flex;
         align-items: center;
-        margin: 0;
+        justify-content: start;
+        margin: 0 10px;
+
     }
 
     #resultadoaluno {
         border-top: 4px solid #F29100;
         background-color: white;
-        height: 200px;
+        height: 300px;
         width: 100vw;
         bottom: 0;
         position: fixed;
@@ -467,7 +470,12 @@
         align-items: center;
         font-size: 40px;
         height: 50px;
+        margin: 0 10px;
 
+    }
+
+    #case1, #case2 {
+        font-size: 20px;
     }
 
     .aprov {
