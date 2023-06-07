@@ -276,9 +276,11 @@
         background-color: #F29100;
         width: 100vw;
         color: white;
-        align-items: center;
+        align-items: end;
 
     }
+
+    
 
     #cursos>div {
         width: 300px;
@@ -296,8 +298,23 @@
         justify-content: end;
     }
 
+    #cursos h2 {
+        padding-right: 40px;
+    }
+
     #cursos h3 {
         text-align: end;
+        font-size: 40px;
+        padding-right: 40px;
+        margin-bottom: 100px;
+    }
+
+    #cursos li{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin: 0;
+        > p {text-align: end;}
     }
 
 

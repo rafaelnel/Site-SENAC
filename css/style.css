@@ -276,8 +276,16 @@ h2 {
 
 }
 
+#cursos ul p {
+    margin-top: 10px;
+}
+
 #cursos h3 {
     text-align: end;
+    margin-bottom: 0;
+    background-color: white;
+    color: #F29100;
+    padding: 0 20px;
 }
 
 #local {
@@ -333,7 +341,7 @@ h2 {
 
 
 h3 {
-    font-size: 20px;
+    font-size: 40px;
 }
 
 
