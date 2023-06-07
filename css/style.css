@@ -122,7 +122,7 @@ main {
 
 .psg-card {
     border-bottom: 20px solid #F29100;
-    width: 1000px;
+    width: 1200px;
     font-weight: 300;
     display: flex;
     justify-content: center;
@@ -395,8 +395,8 @@ input::-webkit-inner-spin-button {
 
 #presenca form {
     margin-top: 40px;
-    width: 900px;
-    height: 400px;
+    width: 1000px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -413,6 +413,7 @@ input::-webkit-inner-spin-button {
     align-items: center;
     justify-content: start;
     margin: 0 20px;
+    height: 80px;
 }
 
 #resultado {
@@ -427,7 +428,7 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    margin: 25px 0 ;
+    margin: 25px 0;
 }
 
 #resultadoaluno {
@@ -437,9 +438,10 @@ input::-webkit-inner-spin-button {
     align-items: center;
 }
 
-#case1, #case2 {
+#case1,
+#case2 {
     margin: 5px 0;
-    
+
 }
 
 .aprov {

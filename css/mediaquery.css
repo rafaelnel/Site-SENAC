@@ -280,7 +280,7 @@
 
     }
 
-    
+
 
     #cursos>div {
         width: 300px;
@@ -309,12 +309,15 @@
         margin-bottom: 100px;
     }
 
-    #cursos li{
+    #cursos li {
         display: flex;
         flex-direction: column;
         align-items: end;
         margin: 0;
-        > p {text-align: end;}
+
+        >p {
+            text-align: end;
+        }
     }
 
 
@@ -446,8 +449,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 1600px;
-        margin-bottom: 200px;
+        height: 1300px;
     }
 
     #presenca label {
@@ -460,7 +462,7 @@
         display: flex;
         align-items: center;
         justify-content: start;
-        margin: 0 10px;
+        margin: 5px 10px;
 
     }
 
@@ -491,7 +493,8 @@
 
     }
 
-    #case1, #case2 {
+    #case1,
+    #case2 {
         font-size: 20px;
     }
 
